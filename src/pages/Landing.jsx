@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.svg";
 import main from "../assets/images/main.svg";
 import styled from "styled-components";
 
+
 const Landing = () => {
   return (
     <main>
@@ -27,5 +28,9 @@ const Landing = () => {
     </main>
   );
 };
+
+const wrapper = styled.main`
+  
+`
 
 export default Landing;
