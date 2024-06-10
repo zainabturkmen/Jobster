@@ -30,7 +30,9 @@ const Landing = () => {
 };
 
 const wrapper = styled.main`
-  
+  nav{
+    
+  }
 `
 
 export default Landing;
