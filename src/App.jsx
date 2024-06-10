@@ -1,7 +1,8 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Landing, Dashboard, Error, Register } from "./pages";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -12,6 +13,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
