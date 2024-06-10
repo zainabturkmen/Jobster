@@ -1,11 +1,14 @@
+import {BrowserRouter, Routes, Route} from "react-router"
 import { useState } from "react";
 import { Landing, Dashboard, Error, Register } from "./pages";
 
 function App() {
   return (
-    <div>
-      <Landing />
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Dashboard/>} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
