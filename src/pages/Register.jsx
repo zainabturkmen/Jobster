@@ -28,6 +28,10 @@ function Register() {
       <form className="form" onSubmit={onsubmit}>
         <Logo/>
         <h3>login</h3>
+        {/* name field */}
+        <div className="form-row">
+          <label htmlFor="name" className="form-lable"></label>
+        </div>
       </form>
     </Wrapper>
   );
