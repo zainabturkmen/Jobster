@@ -35,6 +35,20 @@ function Register() {
           value={values.name}
           handleChange={handleChange}
         />
+        {/* email field */}
+        <RowForm
+          type="email"
+          name="email"
+          value={values.email}
+          handleChange={handleChange}
+        />
+        {/* password field */}
+        <RowForm
+          type="password"
+          name="password"
+          value={values.password}
+          handleChange={handleChange}
+        />
         <button type="submit" className="btn btn-block">
           submit
         </button>
