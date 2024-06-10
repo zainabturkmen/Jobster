@@ -24,21 +24,23 @@ function Register() {
   };
 
   const toggleMember = () => {
-    setValue({...values, isMemmber: !values.isMemmber})
-  }
+    setValue({ ...values, isMemmber: !values.isMemmber });
+  };
 
   return (
     <Wrapper className="full-page">
       <form className="form" onSubmit={onsubmit}>
         <Logo />
-        <h3>login</h3>
+        <h3>{values.isMemmber ? "Login" : "Register"}</h3>
         {/* name field */}
-        <RowForm
-          type="text"
-          name="name"
-          value={values.name}
-          handleChange={handleChange}
-        />
+        {values.isMemmber && (
+          <RowForm
+            type="text"
+            name="name"
+            value={values.name}
+            handleChange={handleChange}
+          />
+        )}
         {/* email field */}
         <RowForm
           type="email"
@@ -56,6 +58,12 @@ function Register() {
         <button type="submit" className="btn btn-block">
           submit
         </button>
+        <p>
+          {values.isMemmber ? "Not a member yet" : "already a member"}
+          <button type="button" onClick={toggleMember} className="member-btn">
+            {values.isMemmber ? "Register" : "Login"}
+          </button>
+        </p>
       </form>
     </Wrapper>
   );
