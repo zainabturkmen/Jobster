@@ -11,7 +11,7 @@ const initialState = {
 };
 
 function Register() {
-  const [value, setValue] = useState(initialState);
+  const [values, setValue] = useState(initialState);
 
   const handleChange = (e) => {
     // e.preventDefault()
@@ -30,7 +30,8 @@ function Register() {
         <h3>login</h3>
         {/* name field */}
         <div className="form-row">
-          <label htmlFor="name" className="form-lable"></label>
+          <label htmlFor="name" className="form-lable">name</label>
+          <input type="text" name="name" value={values.name} />
         </div>
       </form>
     </Wrapper>
