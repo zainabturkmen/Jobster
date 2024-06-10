@@ -3,6 +3,7 @@ import main from "../assets/images/main.svg";
 import Wrapper from "../assets/images/Wrapper/Landing";
 import { Logo } from "../components";
 import { Link } from "react-router-dom";
+
 const Landing = () => {
   return (
     <Wrapper>
