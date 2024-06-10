@@ -26,13 +26,22 @@ function Register() {
   return (
     <Wrapper className="full-page">
       <form className="form" onSubmit={onsubmit}>
-        <Logo/>
+        <Logo />
         <h3>login</h3>
         {/* name field */}
         <div className="form-row">
-          <label htmlFor="name" className="form-lable">name</label>
-          <input type="text" name="name" value={values.name} onChange={handleChange} className="form-input"/>
+          <label htmlFor="name" className="form-lable">
+            name
+          </label>
+          <input
+            type="text"
+            name="name"
+            value={values.name}
+            onChange={handleChange}
+            className="form-input"
+          />
         </div>
+        <button type="submit" className="btn btn-block">submit</button>
       </form>
     </Wrapper>
   );
