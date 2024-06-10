@@ -3,7 +3,6 @@ import logo from "../assets/images/logo.svg";
 import main from "../assets/images/main.svg";
 import styled from "styled-components";
 
-
 const Landing = () => {
   return (
     <wrapper>
@@ -30,9 +29,11 @@ const Landing = () => {
 };
 
 const wrapper = styled.main`
-  nav{
-    
+  nav {
+    width: var(--fluid-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
   }
-`
+`;
 
 export default Landing;
