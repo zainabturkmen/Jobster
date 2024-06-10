@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Logo } from "../components";
+import { Logo, RowForm } from "../components";
 import Wrapper from "../assets/images/Wrapper/RegisterPage";
 
 const initialState = {
@@ -29,19 +29,10 @@ function Register() {
         <Logo />
         <h3>login</h3>
         {/* name field */}
-        <div className="form-row">
-          <label htmlFor="name" className="form-lable">
-            name
-          </label>
-          <input
-            type="text"
-            name="name"
-            value={values.name}
-            onChange={handleChange}
-            className="form-input"
-          />
-        </div>
-        <button type="submit" className="btn btn-block">submit</button>
+        <RowForm />
+        <button type="submit" className="btn btn-block">
+          submit
+        </button>
       </form>
     </Wrapper>
   );
