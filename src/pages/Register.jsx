@@ -23,6 +23,10 @@ function Register() {
     console.log(e.target);
   };
 
+  const toggleMember = () => {
+    
+  }
+
   return (
     <Wrapper className="full-page">
       <form className="form" onSubmit={onsubmit}>
