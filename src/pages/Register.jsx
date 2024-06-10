@@ -29,7 +29,12 @@ function Register() {
         <Logo />
         <h3>login</h3>
         {/* name field */}
-        <RowForm />
+        <RowForm
+          type="text"
+          name="name"
+          value={values.name}
+          handleChange={handleChange}
+        />
         <button type="submit" className="btn btn-block">
           submit
         </button>
