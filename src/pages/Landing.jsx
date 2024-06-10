@@ -5,7 +5,7 @@ import main from "../assets/images/main.svg";
 const Landing = () => {
   return <main>
     <nav>
-      <img  />
+      <img src={logo} alt="Jobster Logo" />
     </nav>
   </main>
 };
