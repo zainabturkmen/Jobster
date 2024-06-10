@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const Landing = () => {
   return (
-    <main>
+    <wrapper>
       <nav>
         <img src={logo} alt="Jobster Logo" className="logo" />
       </nav>
@@ -25,7 +25,7 @@ const Landing = () => {
         <button className="btn btn-hero">login/Register</button>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
-    </main>
+    </wrapper>
   );
 };
 
