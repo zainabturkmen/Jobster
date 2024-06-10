@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Landing = () => {
   return (
-    <wrapper>
+    <Wrapper>
       <nav>
         <img src={logo} alt="Jobster Logo" className="logo" />
       </nav>
@@ -24,15 +24,18 @@ const Landing = () => {
         <button className="btn btn-hero">login/Register</button>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
-    </wrapper>
+    </Wrapper>
   );
 };
 
-const wrapper = styled.main`
+const Wrapper = styled.main`
   nav {
     width: var(--fluid-width);
     max-width: var(--max-width);
     margin: 0 auto;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
   }
 `;
 
