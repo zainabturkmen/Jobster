@@ -20,6 +20,7 @@ const Landing = () => {
           fixie raclette taxidermy craft beer. Brunch bitters synth, VHS
           crucifix heirloom meggings bicycle rights.
         </p>
+        <button className="btn btn-hero">login/Register</button>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
     </main>
