@@ -31,7 +31,7 @@ function Register() {
         {/* name field */}
         <div className="form-row">
           <label htmlFor="name" className="form-lable">name</label>
-          <input type="text" name="name" value={values.name} />
+          <input type="text" name="name" value={values.name} onChange={handleChange} className="form-input"/>
         </div>
       </form>
     </Wrapper>
