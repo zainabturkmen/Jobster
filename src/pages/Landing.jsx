@@ -3,11 +3,7 @@ import logo from "../assets/images/logo.svg";
 import main from "../assets/images/main.svg";
 
 const Landing = () => {
-  return (
-    <div>
-      <h1>Landing page</h1>
-    </div>
-  );
+  return <h1>Landing page</h1>;
 };
 
 export default Landing;
