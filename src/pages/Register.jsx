@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Logo, RowForm } from "../components";
 import Wrapper from "../assets/images/Wrapper/RegisterPage";
 import { toast } from "react-toastify";
+import { useSelector, useDispatch } from "react-redux";
+import { store } from "../store";
 
 const initialState = {
   name: "",
@@ -13,6 +15,10 @@ const initialState = {
 
 function Register() {
   const [values, setValue] = useState(initialState);
+
+  const { user, isLoading } = useSelector((store) => store.user);
+  const dispatch = useDispatch()
+
 
   const handleChange = (e) => {
     const name = e.target.name;
