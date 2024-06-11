@@ -3,4 +3,5 @@ import { toast } from "react-toastify";
 
 const initialState = {
     isLoading: false,
+    user: null
 }
