@@ -14,8 +14,9 @@ function Register() {
   const [values, setValue] = useState(initialState);
 
   const handleChange = (e) => {
-    // e.preventDefault()
-    console.log(e.target);
+    const name = e.target.name;
+    const value = e.target.value;
+    console.log(`${name}: ${value}`);
   };
 
   const onSubmit = (e) => {
@@ -33,7 +34,7 @@ function Register() {
         <Logo />
         <h3>{values.isMemmber ? "Login" : "Register"}</h3>
         {/* name field */}
-        {values.isMemmber && (
+        {!values.isMemmber && (
           <RowForm
             type="text"
             name="name"
