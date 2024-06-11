@@ -17,6 +17,7 @@ function Register() {
     const name = e.target.name;
     const value = e.target.value;
     console.log(`${name}: ${value}`);
+    setValue({...values, [name]: value})
   };
 
   const onSubmit = (e) => {
