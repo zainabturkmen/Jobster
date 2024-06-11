@@ -25,7 +25,7 @@ function Register() {
     e.preventDefault();
     const {name, email, password, isMemmber } = values;
     if (!email || !password || (!isMemmber && !name)) {
-      console.log("Please fill out all feilds ");
+      toast("Please fill out all feilds ");
     }
   };
 
