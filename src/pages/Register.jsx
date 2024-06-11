@@ -7,7 +7,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { store } from "../store";
 import { loginUser, registerUser } from "../features/user/userSlice";
 
-
 const initialState = {
   name: "",
   email: "",
@@ -19,28 +18,27 @@ function Register() {
   const [values, setValue] = useState(initialState);
 
   const { user, isLoading } = useSelector((store) => store.user);
-  const dispatch = useDispatch()
-
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     console.log(`${name}: ${value}`);
-    setValue({...values, [name]: value})
+    setValue({ ...values, [name]: value });
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const {name, email, password, isMemmber } = values;
+    const { name, email, password, isMemmber } = values;
     if (!email || !password || (!isMemmber && !name)) {
       toast.error("Please fill out all feilds ");
       return;
     }
     if (isMemmber) {
-      dispatch(loginUser({email: email, password: password}));
+      dispatch(loginUser({ email: email, password: password }));
       return;
     }
-    dispatch(registerUser({name, email, password}))
+    dispatch(registerUser({ name, email, password }));
   };
 
   const toggleMember = () => {
