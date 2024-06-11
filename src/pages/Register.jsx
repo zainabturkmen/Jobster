@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Logo, RowForm } from "../components";
 import Wrapper from "../assets/images/Wrapper/RegisterPage";
+import { toast } from "react-toastify";
 
 const initialState = {
   name: "",
