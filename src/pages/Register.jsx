@@ -22,7 +22,7 @@ function Register() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target);
+    const {name, email, password, isMemmber } = values;
   };
 
   const toggleMember = () => {
