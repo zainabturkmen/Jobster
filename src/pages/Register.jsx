@@ -23,7 +23,7 @@ function Register() {
   const onSubmit = (e) => {
     e.preventDefault();
     const {name, email, password, isMemmber } = values;
-    if (!email || !password) {
+    if (!email || !password || (!isMemmber && !name)) {
       console.log("Please fill out all feilds ");
     }
   };
