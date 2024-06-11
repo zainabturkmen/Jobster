@@ -26,8 +26,6 @@ function Register() {
     const {name, email, password, isMemmber } = values;
     if (!email || !password || (!isMemmber && !name)) {
       toast.error("Please fill out all feilds ");
-      toast.warning("Please fill out all feilds ");
-      toast.success("Please fill out all feilds ");
     }
   };
 
