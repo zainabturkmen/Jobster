@@ -34,7 +34,7 @@ function Register() {
 
   return (
     <Wrapper className="full-page">
-      <form className="form" onSubmit={onsubmit}>
+      <form className="form" onSubmit={onSubmit}>
         <Logo />
         <h3>{values.isMemmber ? "Login" : "Register"}</h3>
         {/* name field */}
